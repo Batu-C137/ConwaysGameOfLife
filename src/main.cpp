@@ -77,7 +77,7 @@ int main(int argc, char* argv[])
 
 	for (;;)
 	{
-		cout << "Press 'ENTER' for next generation\tGen = " << gen << "\nType 'ee' to exit" << endl;
+		cout << "Press 'ENTER' for next generation\tGen = " << gen << "\nType 'e' to exit" << endl;
 
 		if (std::cin.get() == '\n')
 		{

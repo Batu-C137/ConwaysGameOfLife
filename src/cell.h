@@ -21,7 +21,7 @@ private:
 	int *coordinate_x; int * coordinate_y;
 	int *Area_x; int *Area_y;
 	int world_x, world_y, area;
-	int cell[402][402] = {0}; //muss bei Größenanpassung mit verändert werden
+	int cell[402][402] = {0}; //must be changed when adjusting the size
 
 public:
 	Life(int x, int y);
@@ -58,9 +58,9 @@ void Life::start(int i)
 
 	do
 	{
-		std::cout << "Koordinate x von Zelle Eingeben: " << endl;
+		std::cout << "Type x coordinate from cell: " << endl;
 		std::cin >> koord_x;
-		std::cout << "Koordinate y von Zelle Eingeben: " << endl;
+		std::cout << "Type y coordinate from cell: " << endl;
 		std::cin >> koord_y;
 
 		if (koord_x > world_x || koord_x < 1 || koord_y > world_y || koord_y < 1)
@@ -70,7 +70,7 @@ void Life::start(int i)
 				cin.clear();
 				cin.ignore();
 
-				cout << "Koordinaten muessen Ganzzahle sein und duerfen sich nur innerhalb des Spielfeldes befinden!" << endl;
+				cout << "Coordinates must be integers and may only be located within the playing field!" << endl;
 			}
 		}
 		else
